@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { FaUser, FaPhoneAlt } from 'react-icons/fa';
 import { deleteContact } from '../../redux/contacts/operations';
 import { openModal, closeModal } from '../../redux/modal/slice'; 
-import Modal from '../ Modal/Modal';
+import Modal from '../Modal/Modal';
 import { selectModal } from '../../redux/modal/selectors'; 
 import { toast } from 'react-hot-toast';
 import css from './Contact.module.css';
@@ -50,4 +50,3 @@ export default function Contact({ id, name, number }) {
     </>
   );
 }
-

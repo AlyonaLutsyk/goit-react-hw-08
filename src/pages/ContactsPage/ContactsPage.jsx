@@ -18,7 +18,6 @@ export default function TasksPage() {
     return (
       <>
       <PageTitle>Your contacts</PageTitle>
-      <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
       <div>{isLoading && "Request in progress..."}</div>

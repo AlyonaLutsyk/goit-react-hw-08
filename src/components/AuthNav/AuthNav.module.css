@@ -1,14 +1,7 @@
-.authNav {
-    display: flex;
-    gap: 20px;
-}
-
 .link {
-    color: black;
-    margin-left: 10px;
+    display: inline-block;
     text-decoration: none;
-}
-
-.link:hover {
-    text-decoration: underline;
+    padding: 12px;
+    font-weight: 700;
+    color: #2a363b;
 }
