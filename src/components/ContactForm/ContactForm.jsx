@@ -4,6 +4,7 @@ import css from './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from '../../redux/contacts/selectors';
 import { addContact } from '../../redux/contacts/operations';
+import { toast } from 'react-hot-toast';
 
 export default function ContactForm() {
   const dispatch = useDispatch();
@@ -35,6 +36,7 @@ export default function ContactForm() {
     }
 
     dispatch(addContact(newContact));
+    toast.success(`${newContact.name} has been added!`);
     resetForm();
   };
 
